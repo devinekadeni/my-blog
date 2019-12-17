@@ -1,6 +1,6 @@
 .wrapperItem {
   display: grid;
-  grid-template-columns: 1fr 50px;
+  grid-template-columns: calc(100% - 50px) 50px;
   padding: 16px;
   box-shadow: 0px 1px 2px lightgrey;
 }
@@ -24,6 +24,13 @@
   height: 15px;
   background-color: lightgreen;
   border-radius: 20px;
+}
+
+.leftSide > label {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
 }
 
 .percentage {
