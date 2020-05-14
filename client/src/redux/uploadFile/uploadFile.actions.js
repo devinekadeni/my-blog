@@ -20,7 +20,7 @@ export const successUploadFile = id => ({
 })
 
 export const failureUploadFile = id => ({
-  type: uploadFileTypes.SUCCESS_UPLOAD_FILE,
+  type: uploadFileTypes.FAILURE_UPLOAD_FILE,
   payload: id,
 })
 
