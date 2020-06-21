@@ -23,10 +23,9 @@ Now let's run the client code:
 cd client
 
 npm install
-npm start
+npm start // Now the application will be running on your local
 ```
 
 Voila, now you can try demo it by yourself.
 
-NOTE: Don't forget to set your network into `slow 3G` if you want to show up the progressbar incrementing.
-[here](https://stackoverflow.com/questions/41088022/how-to-get-onuploadprogress-in-axios/48412965#48412965) is the resource information:
+NOTE: Don't forget to set your network into `slow 3G` if you want to show up the progressbar incrementing, [here](https://stackoverflow.com/questions/41088022/how-to-get-onuploadprogress-in-axios/48412965#48412965) is the resource information from stackoverflow.
