@@ -9,7 +9,7 @@ Depends on your favor, you could read it from `Medium` or `DEV.to`, the content 
 - [DEV.to/devinekadeni](https://dev.to/devinekadeni)
 - [Medium/@devinekadeni](https://medium.com/@devinekadeni)
 
-I also attach the specifig link to the blog on each of the source code `README.md`, feel free to look at it.
+I also attach the specific link to the blog on each of the source code `README.md`, feel free to look at it.
 
 ---
 
