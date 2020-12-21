@@ -1,5 +1,7 @@
+import axios from 'axios'
 import uploadFileTypes from './uploadFile.types'
 import { modifyFiles } from './uploadFile.utils'
+import { STATUS_UPLOAD } from '../../constants'
 
 const INITIAL_STATE = {
   fileProgress: {
@@ -44,7 +46,7 @@ const fileProgressReducer = (state = INITIAL_STATE, action) => {
           ...state.fileProgress,
           [action.payload]: {
             ...state.fileProgress[action.payload],
-            status: 1,
+            status: STATUS_UPLOAD.success,
           },
         },
       }
@@ -56,10 +58,27 @@ const fileProgressReducer = (state = INITIAL_STATE, action) => {
           ...state.fileProgress,
           [action.payload]: {
             ...state.fileProgress[action.payload],
-            status: 0,
+            status: STATUS_UPLOAD.failed,
             progress: 0,
           },
         },
+      }
+
+    case uploadFileTypes.RETRY_UPLOAD_FILE:
+      const CancelToken = axios.CancelToken
+      const cancelSource = CancelToken.source()
+
+      return {
+        ...state,
+        fileProgress: {
+          ...state.fileProgress,
+          [action.payload]: {
+            ...state.fileProgress[action.payload],
+            status: STATUS_UPLOAD.uploading,
+            progress: 0,
+            cancelSource,
+          }
+        }
       }
 
     default:
