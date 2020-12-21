@@ -36,6 +36,7 @@ export const uploadFile = files => dispatch => {
           url: '/file',
           method: 'post',
           data: formPayload,
+          cancelToken: file.cancelSource.token,
           onUploadProgress: progress => {
             const { loaded, total } = progress
 
@@ -45,6 +46,10 @@ export const uploadFile = files => dispatch => {
         })
         dispatch(successUploadFile(file.id))
       } catch (error) {
+        if (axios.isCancel(error)) {
+          // Do something when user cancel upload
+          console.log('cancelled by user')
+        }
         dispatch(failureUploadFile(file.id))
       }
     })

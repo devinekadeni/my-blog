@@ -1,13 +1,14 @@
-// import axios from 'axios'
+import axios from 'axios'
 import { size } from 'lodash'
+import { STATUS_UPLOAD } from '../../constants'
 
 export const modifyFiles = (existingFiles, files) => {
   let fileToUpload = {}
 
   for (let i = 0; i < files.length; i++) {
     const id = size(existingFiles) + i + 1
-    // const CancelToken = axios.CancelToken  --> can be used for cancelling upload progress
-    // const source = CancelToken.source()
+    const CancelToken = axios.CancelToken
+    const source = CancelToken.source()
 
     fileToUpload = {
       ...fileToUpload,
@@ -15,7 +16,8 @@ export const modifyFiles = (existingFiles, files) => {
         id,
         file: files[i],
         progress: 0,
-        // cancelSource: source,
+        cancelSource: source,
+        status: STATUS_UPLOAD.uploading,
       },
     }
   }
