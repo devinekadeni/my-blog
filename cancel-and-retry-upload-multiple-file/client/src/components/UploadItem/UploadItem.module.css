@@ -6,10 +6,10 @@
 }
 
 .leftSide {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 8px;
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 6px;
+  margin-right: 12px;
 }
 
 .progressBar {
@@ -34,6 +34,14 @@
   text-align: left;
 }
 
-.percentage {
-  margin-left: 12px;
+.rightSide {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 6px;
+  margin-right: 12px;
+}
+
+.rightSide > span:first-child {
+  font-size: 18px;
+  cursor: pointer;
 }
