@@ -55,3 +55,16 @@ export const uploadFile = files => dispatch => {
     })
   }
 }
+
+export const retryUpload = (id) => (dispatch, getState) => {
+  dispatch({
+    type: uploadFileTypes.RETRY_UPLOAD_FILE,
+    payload: id,
+  })
+
+  const { fileProgress } = getState().UploadFile
+
+  const reuploadFile = [fileProgress[id]]
+  
+  dispatch(uploadFile(reuploadFile))
+}
