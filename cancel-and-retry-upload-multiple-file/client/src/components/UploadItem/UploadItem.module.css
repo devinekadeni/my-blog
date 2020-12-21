@@ -1,0 +1,47 @@
+.wrapperItem {
+  display: grid;
+  grid-template-columns: calc(100% - 50px) 50px;
+  padding: 16px;
+  box-shadow: 0px 1px 2px lightgrey;
+}
+
+.leftSide {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 6px;
+  margin-right: 12px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 15px;
+  background-color: lightgray;
+  margin-bottom: 8px;
+  border-radius: 20px;
+}
+
+.progressBar > div {
+  height: 15px;
+  background-color: lightgreen;
+  border-radius: 20px;
+  transition: width 1s;
+}
+
+.leftSide > label {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.rightSide {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 6px;
+  margin-right: 12px;
+}
+
+.rightSide > span:first-child {
+  font-size: 18px;
+  cursor: pointer;
+}
