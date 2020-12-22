@@ -24,6 +24,7 @@
   height: 15px;
   background-color: lightgreen;
   border-radius: 20px;
+  transition: width 1s;
 }
 
 .leftSide > label {
