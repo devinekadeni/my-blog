@@ -2,15 +2,15 @@
 
 This is the source code of `Medium` & `Dev.to` article:
 
-- [Dev.to](https://dev.to/devinekadeni/how-to-upload-multiple-file-with-progress-bar-reactjs-redux-and-expressjs-4hb3)
-- [Medium](https://medium.com/@devinekadeni/how-to-upload-multiple-file-with-progress-bar-reactjs-redux-and-expressjs-ed9b0d3fcaf1)
+- [Dev.to - How to Upload Multiple File With Feature Cancellation & Retry Using ReactJS](https://dev.to/devinekadeni/how-to-upload-multiple-file-with-feature-cancellation-retry-using-reactjs-18cd)
+- [Medium - How to Upload Multiple File With Feature Cancellation & Retry Using ReactJS](https://devinekadeni.medium.com/how-to-upload-multiple-file-with-feature-cancellation-retry-using-reactjs-81cb5c9ce629)
 
 ## Getting Started
 
 ```bash
 git clone https://github.com/devinekadeni/my-blog.git
 
-cd my-blog/upload-multiple-file-with-progress-bar
+cd my-blog/cancel-and-retry-upload-multiple-file
 ```
 
 We have 2 code base in this repository, 1 Client and 1 Server.
