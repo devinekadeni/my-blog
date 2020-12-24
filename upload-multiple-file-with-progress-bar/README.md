@@ -2,8 +2,8 @@
 
 This is the source code of `Medium` & `Dev.to` article:
 
-- [Dev.to](https://dev.to/devinekadeni/how-to-upload-multiple-file-with-progress-bar-reactjs-redux-and-expressjs-4hb3)
-- [Medium](https://medium.com/@devinekadeni/how-to-upload-multiple-file-with-progress-bar-reactjs-redux-and-expressjs-ed9b0d3fcaf1)
+- [Dev.to - How to Upload Multiple File with Progress Bar (ReactJS + Redux and ExpressJS)](https://dev.to/devinekadeni/how-to-upload-multiple-file-with-progress-bar-reactjs-redux-and-expressjs-4hb3)
+- [Medium - How to Upload Multiple File with Progress Bar (ReactJS + Redux and ExpressJS)](https://medium.com/@devinekadeni/how-to-upload-multiple-file-with-progress-bar-reactjs-redux-and-expressjs-ed9b0d3fcaf1)
 
 ## Getting Started
 
